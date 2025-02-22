@@ -5,14 +5,20 @@ content:
     label: Posts
     path: src/content
     type: collection
+    view:
+      fields: [date, title, description]
+      primary: title
+      sort: [date, title]
     fields:
       - name: id
-        label: ID
         type: uuid
         required: true
         hidden: true
-      - name: title
+      - name: date
+        type: date
         required: true
-      - name: description
-        label: Description
+      - name: title
         type: string
+        required: true
+      - name: content
+        type: text
