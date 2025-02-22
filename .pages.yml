@@ -20,5 +20,7 @@ content:
       - name: title
         type: string
         required: true
-      - name: content
-        type: text
+      - name: body
+        type: rich-text
+        options:
+          format: markdown
