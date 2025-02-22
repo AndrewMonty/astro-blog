@@ -24,3 +24,14 @@ content:
         type: rich-text
         options:
           format: markdown
+
+  - name: services
+    path: src/data/services.json
+    type: file
+    list: true
+    fields:
+      - { name: id, type: uuid, required: true, hidden: true }
+      - { name: title, label: Title, type: string, required: true }
+      - { name: published, label: Published, type: boolean, default: true }
+      - { name: description, label: Description, type: string, required: true }
+      - { name: body, label: Body, type: rich-text, required: true }
