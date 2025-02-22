@@ -10,9 +10,9 @@ content:
         label: ID
         type: uuid
         required: true
+        hidden: true
+      - name: title
+        required: true
       - name: description
         label: Description
         type: string
-        options:
-          minlength: 20
-          maxlength: 160
