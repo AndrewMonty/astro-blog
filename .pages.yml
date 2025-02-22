@@ -1,6 +1,17 @@
-- name: description
-  label: Description
-  type: string
-  options:
-    minlength: 20
-    maxlength: 160
+media: files/media
+
+content:
+  - name: posts
+    label: Posts
+    path: src/content
+    type: collection
+    fields:
+      - name: id
+        label: ID
+        type: string
+      - name: description
+        label: Description
+        type: string
+        options:
+          minlength: 20
+          maxlength: 160
